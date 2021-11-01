@@ -1,0 +1,69 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main() {
+	int PhoneNum[10];
+
+	cout << "Enter your phone number" << endl;
+	cin >> PhoneNum[0];
+	cin >> PhoneNum[1];
+	cin >> PhoneNum[2];
+	cin >> PhoneNum[3];
+	cin >> PhoneNum[4];
+	cin >> PhoneNum[5];
+	cin >> PhoneNum[6];
+	cin >> PhoneNum[7];
+	cin >> PhoneNum[8];
+	cin >> PhoneNum[9];
+
+
+	cout << "Here are your numbers:" << endl;
+	for (int i = 0; i < 10; i++)
+		cout << PhoneNum[i] << endl;
+	cout << endl << endl;
+
+	sort(PhoneNum, PhoneNum + 10);
+
+	cout << "Here are your phone numbers in order:" << endl;
+	for (int i = 0; i < 10; i++)
+		cout << PhoneNum[i] << endl;
+	cout << endl << endl;
+
+	string name[20];
+
+	cout << "Enter your names" << endl;
+	cin >> name[0];
+	cin >> name[1];
+	cin >> name[2];
+	cin >> name[3];
+	cin >> name[4];
+	cin >> name[5];
+	cin >> name[6];
+	cin >> name[7];
+	cin >> name[8];
+	cin >> name[9];
+	cin >> name[10];
+	cin >> name[11];
+	cin >> name[12];
+	cin >> name[13];
+	cin >> name[14];
+	cin >> name[15];
+	cin >> name[16];
+	cin >> name[17];
+	cin >> name[18];
+	cin >> name[19];
+
+
+	cout << "Here are your names:" << endl;
+	for (int i = 0; i < 20; i++)
+		cout << name[i] << endl;
+	cout << endl << endl;
+
+	random_shuffle(name, name + 20);
+
+	cout << "Here are your names in randomized:" << endl;
+	for (int i = 0; i < 20; i++)
+		cout << name[i] << endl;
+	cout << endl << endl;
+}
